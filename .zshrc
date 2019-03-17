@@ -42,12 +42,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # ssh-agent
 SSH_ENV="$HOME/.ssh/environment"
 
-# Set SSH to use gpg-agent
-unset SSH_AGENT_PID
-if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-fi
-
 
 # Set title to GNU screen/byobu tab
 settitle() {
