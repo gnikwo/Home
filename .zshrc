@@ -39,10 +39,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-# ssh-agent
-SSH_ENV="$HOME/.ssh/environment"
-
-
 # Set title to GNU screen/byobu tab
 settitle() {
     if [ "$TERM" = "screen" ];
@@ -63,5 +59,13 @@ export INCLUDEOS_PREFIX=~/includeos/
 export PATH=$PATH:$INCLUDEOS_PREFIX/bin
 
 source ~/.aliases
+
+if [ -r ~/.aliases.local ]; then
+    source ~/.aliases.local
+fi
+
+if [ -r ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
