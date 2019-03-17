@@ -1,0 +1,16 @@
+[user]
+	email = gnikwo@hotmail.com
+	name = gnikwo
+	signingkey = gnikwo@hotmail.com
+[push]
+	default = simple
+[commit]
+	gpgsign = false
+[gpg]
+	program = gpg
+[color]
+	ui = auto
+[merge]
+	toot = vimdiff
+[core]
+    editor = 'nvim'
