@@ -91,7 +91,7 @@ prompt_nabos_precmd() {
   else
       prompt_git=""
   fi
-  time=$(date | cut -d ' ' -f 4)
+  time=$(date | grep -e "..:..:.." -o)
   prompt_time="$prompt_l_paren$time$prompt_r_paren"
   prompt_line_1b="$prompt_time-$prompt_git$prompt_line_1b_first"
 
