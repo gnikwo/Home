@@ -1,3 +1,7 @@
+case $(tty) in /dev/tty1)
+    sway ;;
+esac
+
 #Correcting backspace problems
 export TERM=linux
 
