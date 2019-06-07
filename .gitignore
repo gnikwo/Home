@@ -2,9 +2,6 @@
 .*
 !.zshrc
 !.zsh
-!.ssh
-.ssh/*
-!.ssh/config
 !.gitignore
 !.gitconfig
 !bepo.txt
