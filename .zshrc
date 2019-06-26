@@ -59,6 +59,9 @@ ssh() {
     settitle $(hostname)
 }
 
+clear-screen() { clear; zle redisplay; }
+zle -N clear-screen
+
 export INCLUDEOS_PREFIX=~/includeos/
 export PATH=$PATH:$INCLUDEOS_PREFIX/bin
 
