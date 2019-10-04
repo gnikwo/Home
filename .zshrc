@@ -62,9 +62,6 @@ ssh() {
 clear-screen() { clear; zle redisplay; }
 zle -N clear-screen
 
-export INCLUDEOS_PREFIX=~/includeos/
-export PATH=$PATH:$INCLUDEOS_PREFIX/bin
-
 source ~/.aliases
 
 if [ -r ~/.aliases.local ]; then
@@ -76,3 +73,4 @@ if [ -r ~/.zshrc.local ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
