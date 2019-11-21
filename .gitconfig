@@ -10,7 +10,13 @@
 	program = gpg
 [color]
 	ui = auto
-[merge]
-	toot = vimdiff
 [core]
-    editor = 'nvim'
+    editor = nvim
+[diff]
+	tool = vimdiff
+[merge]
+    tool = vimdiff
+[mergetool "vimdiff"]
+    cmd = nvim -d $LOCAL $REMOTE -c 'wincmd w'
+[difftool]
+	prompt = false

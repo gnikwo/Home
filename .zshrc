@@ -3,7 +3,7 @@ case $(tty) in /dev/tty1)
 esac
 
 precmd () { print -Pn "\e]0;`pwd`\a" }
-preexec () { print -Pn "\e]0;[%n@%M]%# ($1)\a" }
+preexec () { print -Pn "\e]0;$1\a" }
 
 #Correcting backspace problems
 export TERM=linux
