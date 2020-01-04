@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:/gnikwo/home_mako
+	branch = master
+	commit = 1edd44dc62d1075e002002cc0660e7b60eff9785
+	parent = 978b1cd83557acc80f8919e0a201cd06f624eb36
+	method = merge
+	update = auto
+	cmdver = 0.4.1

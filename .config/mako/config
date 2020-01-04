@@ -1,0 +1,7 @@
+[urgency=normal]
+border-size=0
+background-color=#08415CCC
+
+[urgency=high]
+border-size=0
+background-color=#B80C09CC
