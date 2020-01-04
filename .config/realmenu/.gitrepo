@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:/gnikwo/realmenu
+	branch = master
+	commit = c12e2cc20c0a881497171ca392c146094c36366e
+	parent = 9f1f4698fd291a29c48791fb7b9dbd0d9a60fad4
+	method = merge
+	update = auto
+	cmdver = 0.4.1

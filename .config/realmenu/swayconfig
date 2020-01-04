@@ -1,0 +1,3 @@
+#Realmenu
+set $menu 'termite -t realmenu -c .config/realmenu/config -e ".config/realmenu/realmenu.sh"'
+for_window [title="realmenu"] floating enable 
