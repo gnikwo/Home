@@ -18,6 +18,7 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/s
 fpath=(~/.config/realmenu/.zsh/functions $fpath)
 
 autoload -U promptinit
+autoload -U colors && colors
 promptinit
 PROMPT='>'
 #prompt realmenu
@@ -40,12 +41,12 @@ settitle() {
     fi
 }
 
-add-swaymsg() { 
+add-swaymsg() {
     NBUFFER="swaymsg exec \"$BUFFER\"; exit";
     eval "echo \"$BUFFER\" >> .config/realmenu/.history";
     eval "$NBUFFER";
     BUFFER="";
-    zle .$WIDGET "$@"; 
+    zle .$WIDGET "$@";
 }
 zle -N accept-line add-swaymsg
 
@@ -54,5 +55,10 @@ zshaddhistory() {
 }
 
 
-source ~/.aliases
+source ~/.config/realmenu/.aliases
+
+if [ -r ~/.config/realmenu/.aliases.local ]; then
+    source ~/.config/realmenu/.aliases.local
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
