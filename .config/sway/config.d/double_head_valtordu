@@ -1,0 +1,22 @@
+
+set $monitor-1 LVDS-1
+set $monitor-2 VGA-1
+
+output $monitor-1 pos 1920 280 res 1280x800
+output $monitor-2 pos 0 0 res 1920x1080
+
+bindswitch lid:off output $monitor-1 enable;
+bindswitch lid:on output $monitor-1 disable; exec $LOCK_COMMAND; exec $SLEEP_COMMAND
+
+workspace 1 output $monitor-2
+workspace 2 output $monitor-2
+workspace 3 output $monitor-2
+workspace 4 output $monitor-2
+workspace 5 output $monitor-2
+workspace 6 output $monitor-1
+workspace 7 output $monitor-1
+workspace 8 output $monitor-1
+workspace 9 output $monitor-1
+workspace 10 output $monitor-1
+
+exec --no-startup-id "swaymsg 'workspace 2; exec GDK_BACKEND=wayland firefox'"

@@ -1,0 +1,9 @@
+input 6421:61166:Tap_D440160_Keyboard {
+    xkb_layout fr
+    xkb_variant oss
+}
+
+input 5840:3388:MCS_InputStick {
+    xkb_layout fr
+    xkb_variant oss
+}

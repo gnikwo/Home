@@ -1,0 +1,2 @@
+# Lid close
+bindswitch lid:on exec $CLEAN_SSH; exec $LOCK_COMMAND; exec $SLEEP_COMMAND

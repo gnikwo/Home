@@ -1,0 +1,13 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:/gnikwo/home_sway
+	branch = master
+	commit = 93113d18aede025ebf551c5efe91d199e9625052
+	parent = d7d95be6ce78695315427f4474bd0154a2a6184d
+	method = merge
+	update = auto
+	cmdver = 0.4.1
