@@ -1,0 +1,8 @@
+Duckduckgo:
+https://duckduckgo.com/?kae=d&k5=2&kah=fr-fr&kl=fr-fr&k7=002b36&kj=002B36&km=l&ka=inconsolata&k9=ffffff&kaa=767676&kt=inconsolata
+
+#FFFFFF Noir
+#002B36 Bleu foncé
+#08415C Blue moins foncé
+#352c47 Violet
+#CC2936 Rouge
