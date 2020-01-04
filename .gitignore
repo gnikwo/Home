@@ -1,8 +1,5 @@
 *
 .*
-!.zshrc
-!.zsh
 !.gitignore
 !.gitconfig
-!bepo.txt
-
+.config/*
