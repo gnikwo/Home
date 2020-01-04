@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_termite
 	branch = master
-	commit = 9f52d6719481fb1d478d5cadc98a70adee1e4e84
-	parent = 76ee6064a41f477b4f69477cbd3ca891ede7ac5e
+	commit = b2dd6edd0c0c3c7cb08857aa42f8d8bf5ab44aa2
+	parent = 2881b1862212167b8669ffc2714684a91d8f668a
 	method = merge
 	update = auto
 	cmdver = 0.4.1

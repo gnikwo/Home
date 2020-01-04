@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_themes
 	branch = master
-	commit = 1ca316a7a67f6b5bd45d6c2828b3a14e976d8c89
-	parent = 00ff4656bc8d69478b035436bc209405763b66f4
+	commit = c52ec288659d6a354d5d91c2b0e02713b3a28ef9
+	parent = 0999f8837f95cba0e68f3645e4bd475886ba7732
 	method = merge
 	update = auto
 	cmdver = 0.4.1

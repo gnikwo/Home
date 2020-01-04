@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_mako
 	branch = master
-	commit = 1edd44dc62d1075e002002cc0660e7b60eff9785
-	parent = 978b1cd83557acc80f8919e0a201cd06f624eb36
+	commit = 8d8b0945b87fc9decf0b183cb6ec95b1bee68b23
+	parent = 21b5d61aaf29f15abce28a2aed0f514a92d8ce65
 	method = merge
 	update = auto
 	cmdver = 0.4.1
