@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/realmenu
 	branch = master
-	commit = 9a9e8a92f8081d5c1c99a2e5d5f784a988c6465c
-	parent = c2febc7fb960bc81ae3577c07dcc6782757feb85
+	commit = 4b2af37c90246c981381d065463c5c86cdfc7cc3
+	parent = 4818c61423a5f5a6b09857296a2452ea921ca6df
 	method = merge
 	update = auto
 	cmdver = 0.4.1
