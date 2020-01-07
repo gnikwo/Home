@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_nvim
 	branch = master
-	commit = 97251c179908dee9002cc3a00c66852e78a8f0f5
-	parent = c9ff4907eb6ce8a4690f282ec38ae3c6d4aae617
+	commit = 7aeff5adf9cf4540da38ce76054d11831a894471
+	parent = 7f151571251d31250ce79d4e915b8c1fd3d55dcc
 	method = merge
 	update = auto
 	cmdver = 0.4.1
