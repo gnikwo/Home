@@ -192,8 +192,6 @@ colorscheme solarized
 hi! Normal ctermbg=NONE guibg=NONE
 hi clear LineNR
 
-autocmd BufEnter * lcd %:p:h
-
 "SYNTAX/LAYOUT
 filetype plugin indent on   " automatic recognition of filetype
 set wrap                    " wrap
