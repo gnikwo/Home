@@ -19,31 +19,23 @@ Plug 'tpope/vim-markdown'
 Plug 'vim-scripts/nginx.vim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'nvie/vim-flake8'
-"Plug 'lervag/vimtex'
-
-Plug 'maralla/completor.vim'
-
-Plug 'Quramy/tsuquyomi', { 'do': 'npm -g install typescript' }
-Plug 'vim-syntastic/syntastic'
-Plug 'leafgarland/typescript-vim'
-
-Plug 'terryma/vim-smooth-scroll'
 
 Plug 'artur-shaik/vim-javacomplete2'
 
-Plug 'burnettk/vim-angular'
-Plug 'pangloss/vim-javascript'
-
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
-Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'Raimondi/delimitMate'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
-Plug 'SirVer/ultisnips' "Both snippet plugins are needed for them to work
+
+Plug 'terryma/vim-smooth-scroll'
+
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
-Plug 'michamos/vim-bepo'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'gnikwo/vim-bepo'
 
 call plug#end()
 
@@ -168,6 +160,26 @@ set tabstop=4             " how many spaces on tab
 set softtabstop=4         " one tab = 4 spaces
 set shiftwidth=4          " reduntant with above
 
+" ======================== Coc Config ========================
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+" ========================
+
 " Relative numbering
 
 function! NumberToggle()
@@ -214,15 +226,11 @@ nmap <F5> <Plug>(JavaComplete-Imports-Add)
 nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_quiet_messages = { "type": "warning" }
-
-let g:tsuquyomi_disable_quickfix = 1
-let g:tsuquyomi_completion_detail = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi']
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 "NERDTREE
 
