@@ -6,8 +6,8 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_zsh
 	branch = master
-	commit = 1dfc4cb9a7686b030bbfee27a8bc71326c79b0d6
-	parent = f809f6a39c6492de96681f3701a72a9ffec03372
+	commit = 06cecc6c30f6f5f258d516fc5d67c5991d34e984
+	parent = d9c1fce6ea8106955af6f946492fa4e30fd327d3
 	method = merge
 	update = auto
 	cmdver = 0.4.1
