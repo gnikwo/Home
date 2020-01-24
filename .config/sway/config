@@ -163,6 +163,11 @@ for_window [class="Xeyes"] floating enable
     # move focus to the parent container
     bindsym $mod+g focus parent
 
+    # move window to scratchpad
+    bindsym $mod+Shift+backspace move scratchpad
+    bindsym $mod+backspace scratchpad show
+
+
 # Resizing containers:
 #
 mode "resize" {
