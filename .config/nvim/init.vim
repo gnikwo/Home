@@ -54,7 +54,7 @@ nnoremap <BS> <C-^>
 
 " FZF
 set wildmenu
-let $FZF_DEFAULT_COMMAND = 'find -not -path "*.o" -not -path "./.git*" -not -path "./target*" -not -path "*/target*"'
+let $FZF_DEFAULT_COMMAND = 'find -not -path "*.o" -not -path "./.git*" -not -path "./target*" -not -path "*/node_modules*" -not -path "*/target*"'
 nnoremap <silent> <space><space> :Files<CR>
 nnoremap <silent> <space>b :Buffers<CR>
 nnoremap <silent> <space>/ :execute 'Ag ' . input('Ag/')<CR>
