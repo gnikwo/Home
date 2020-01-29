@@ -1,16 +1,16 @@
 
 set $monitor-1 DP-2
-set $monitor-2 DVI-D-1 
-set $monitor-3 HDMI-A-1
+set $monitor-2 DVI-D-1
+set $monitor-3 HDMI-A-2
 
 output $monitor-1 pos 0 0 res 1920x1080@Hz
 output $monitor-2 pos 1920 0 res 1920x1080@144Hz
-output $monitor-3 pos 3840 0
+output $monitor-3 pos 3840 0 res 1920x1080@Hz
 
-workspace 1 output $monitor-1
-workspace 2 output $monitor-1
-workspace 3 output $monitor-1
-workspace 4 output $monitor-1
+workspace 1 output $monitor-2
+workspace 2 output $monitor-2
+workspace 3 output $monitor-2
+workspace 4 output $monitor-2
 workspace 5 output $monitor-2
 workspace 6 output $monitor-2
 workspace 7 output $monitor-2
@@ -18,15 +18,6 @@ workspace 8 output $monitor-2
 workspace 9 output $monitor-3
 workspace 10 output $monitor-3
 workspace 0 output $monitor-3
-workspace kodi output $monitor-3
 
-for_window [class="Kodi"] workspace kodi
-assign [class="Kodi"] kodi
-
-exec --no-startup-id "swaymsg 'workspace 1; exec termite'"
-exec --no-startup-id "swaymsg 'workspace 5; exec firefox'"
-exec --no-startup-id "swaymsg 'workspace 7; exec telegram-desktop'"
-exec --no-startup-id "swaymsg 'workspace 7; exec signal-desktop'"
+exec --no-startup-id "swaymsg 'workspace 8; exec telegram-desktop'"
 exec --no-startup-id "swaymsg 'workspace 8; exec riot-desktop'"
-exec --no-startup-id "swaymsg 'workspace 0; exec thunar'"
-

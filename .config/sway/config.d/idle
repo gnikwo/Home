@@ -1,8 +1,0 @@
-# Idle
-exec swayidle \
-    timeout 300 'swaymsg "output * dpms off"' \
-       resume 'swaymsg "output * dpms on"' \
-    timeout 2700 $SLEEP_COMMAND \
-    before-sleep $LOCK_COMMAND
-
-for_window [app_id="firefox"] inhibit_idle fullscreen
