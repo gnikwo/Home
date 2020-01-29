@@ -17,7 +17,7 @@ set $CLEAN_SSH 'source ~/.ssh/environment && ssh-add -D'
 # Idle
 set $TIMEOUT_COMMAND $CLEAN_SSH
 set $LOCK_COMMAND 'swaylock -C ~/.config/sway/swaylock/config'
-set $SLEEP_COMMAND 'systemctl hybrid-sleep'
+set $SLEEP_COMMAND 'systemctl suspend'
 
 # Your preferred terminal emulator
 set $term termite
