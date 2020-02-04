@@ -78,7 +78,7 @@ for_window [class="Xeyes"] floating enable
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     #floating_modifier $mod normal
-    floating_modifier none
+    floating_modifier Mod4 normal
 
     # reload the configuration file
     bindsym $mod+Shift+0xe8 reload
