@@ -301,6 +301,7 @@ noremap <silent> S :call smooth_scroll#up(&scroll, 7, 1)<CR>
 noremap <silent> T :call smooth_scroll#down(&scroll, 7, 1)<CR>
 
 " Status line
-set statusline=%t
+set statusline=%{get(g:,'coc_git_status','')}
+set statusline+=\ \ \|\ \ %t
 
-set laststatus=1
+set laststatus=2
