@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:/gnikwo/home_sway
 	branch = master
-	commit = 37b8be96cb2e2625b56e5d46e20ed1cf0142f4b7
+	commit = cc208517c70ed8bbb7b7f6ebe713eaa03d9a2ad7
 	parent = 45c91ab4ed1147a909bb5abdb9b03c8cd6206565
 	method = merge
 	update = auto
