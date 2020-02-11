@@ -1,3 +1,3 @@
 # Screenshots
-bindsym $KEY_SCREENSHOT exec 'grim ~/Screenshots/$(date +"%Y-%m-%d-%H%M%S.png")'
-bindsym $KEY_SCREENSHOT_ALT exec 'grim -g "$(slurp)" ~/Screenshots/$(date +"%Y-%m-%d-%H%M%S.png")'
+bindsym $KEY_SCREENSHOT exec 'SCREENSHOT=~/Screenshots/$(date +"%Y-%m-%d-%H_%M_%S.png"); grim $SCREENSHOT && cat $SCREENSHOT | wl-copy'
+bindsym $KEY_SCREENSHOT_ALT exec 'SCREENSHOT=~/Screenshots/$(date +"%Y-%m-%d-%H_%M_%S.png"); grim -g "$(slurp)" $SCREENSHOT && cat $SCREENSHOT | wl-copy'
