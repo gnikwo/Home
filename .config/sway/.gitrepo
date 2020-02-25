@@ -7,7 +7,7 @@
 	remote = git@github.com:/gnikwo/home_sway
 	branch = master
 	commit = 2110daf5918b35bfd79cdbc01c260d7bfb8375c6
-	parent = 1a7a86abe0329fb42e4be5ccd18b008ab658abf3
+	parent = b73ae432471aad12e8ae30388a3e3453946dde67
 	method = merge
 	update = auto
 	cmdver = 0.4.1
