@@ -5,14 +5,14 @@
 	"position": "top",
 
 	"modules-left": [
-		"sway/workspaces"
+		"sway/workspaces",
+        "mpd"
 	],
 	"modules-center": [
-		"clock#1",
-		"clock#2",
-		"clock#3"
+		"clock"
 	],
 	"modules-right": [
+        "network",
 		"pulseaudio",
 		"memory",
 		"cpu",
@@ -24,17 +24,10 @@
 		"format": "{name}"
 	},
 
-	"clock#1": {
-		"format": "{:%a}",
-		"tooltip": false
-	},
-	"clock#2": {
-		"format": "{:%H:%M}",
-		"tooltip": false
-	},
-	"clock#3": {
-		"format": "{:%d/%m}",
-		"tooltip": false
+	"clock": {
+		"format": "{:%a  %H:%M  %d/%m}",
+		"tooltip": true,
+		"tooltip-format": "{:%t%B%n}{calendar}"
 	},
 
 	"pulseaudio": {
@@ -74,5 +67,41 @@
 			"",
 			""
 		]
-	}
+	},
+    "network": {
+        "interval": 2,
+        "format": "",
+        "format-wifi": "{bandwidthUpBits}↑ {bandwidthDownBits}↓ ",
+        "format-ethernet": "{bandwidthUpBits}↑ {bandwidthDownBits}↓ ",
+        "format-disconnected": "",
+        "tooltip-format": "",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "",
+        "max-length": 50
+    },
+    "mpd": {
+        "format": "            {stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "Stopped",
+        "interval": 2,
+        "consume-icons": {
+            "on": " " // Icon shows only when "consume" is on
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip": false
+    }
 }

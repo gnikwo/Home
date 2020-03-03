@@ -48,6 +48,7 @@ focus_follows_mouse no
 
 exec --no-startup-id "waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css"
 exec --no-startup-id "mako"
+exec --no-startup-id "neworkd-notify"
 bindsym Ctrl+Space exec "makoctl dismiss"
 
 
