@@ -3,6 +3,7 @@
 {
 	"layer": "top",
 	"position": "top",
+    "output": ["DVI-D-1"],
 
 	"modules-left": [
 		"sway/workspaces",
@@ -82,8 +83,8 @@
     },
     "mpd": {
         "format": "            {stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
-        "format-disconnected": "Disconnected",
-        "format-stopped": "Stopped",
+        "format-disconnected": "",
+        "format-stopped": "         Stopped",
         "interval": 2,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
