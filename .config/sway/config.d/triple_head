@@ -21,3 +21,9 @@ workspace 0 output $monitor-3
 
 exec --no-startup-id "swaymsg 'workspace 8; exec telegram-desktop'"
 exec --no-startup-id "swaymsg 'workspace 8; exec riot-desktop'"
+
+exec --no-startup-id "waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css"
+exec --no-startup-id "waybar -c ~/.config/sway/waybar/config_tv_left -s ~/.config/sway/waybar/style.css"
+exec --no-startup-id "waybar -c ~/.config/sway/waybar/config_tv_right -s ~/.config/sway/waybar/style.css"
+exec --no-startup-id "waybar -c ~/.config/sway/waybar/config_tv_bottom -s ~/.config/sway/waybar/style.css"
+exec --no-startup-id "waybar -c ~/.config/sway/waybar/config_tv_top -s ~/.config/sway/waybar/style.css"

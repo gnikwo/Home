@@ -86,6 +86,8 @@
         "format-disconnected": "",
         "format-stopped": "         Stopped",
         "interval": 2,
+        "on-scroll-up": "mpc volume +5",
+        "on-scroll-down": "mpc volume -5",
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
         },

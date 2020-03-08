@@ -7,6 +7,7 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'mbbill/undotree'
 
 Plug 'airblade/vim-rooter'
 

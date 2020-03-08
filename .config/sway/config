@@ -27,7 +27,9 @@ set $term termite
 # set $menu 'dmenu_path | dmenu -b -nb "#002b36" | xargs swaymsg exec'
 
 ### Output configuration
-output * bg ~/.config/themes/digital_space_universe_4k_8k-2560x1600.jpg fill
+#output * bg "oguri-swaybg ~/.config/themes/digital_spac" fill
+exec --no-startup-id "oguri -c ~/config/sway/oguri.ini"
+
 
 bindsym $mod+p exec "thunar"
 
@@ -46,7 +48,6 @@ gaps outer 0
 font inconsolata:DejaVu Sans Mono 8
 focus_follows_mouse no
 
-exec --no-startup-id "waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css"
 exec --no-startup-id "mako"
 exec --no-startup-id "neworkd-notify"
 bindsym Ctrl+Space exec "makoctl dismiss"
@@ -178,8 +179,8 @@ mode "resize" {
     # up will shrink the containers height
     # down will grow the containers height
     bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
+    bindsym $down resize shrink height 10px
+    bindsym $up resize grow height 10px
     bindsym $right resize grow width 10px
 
     # ditto, with arrow keys
