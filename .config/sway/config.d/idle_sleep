@@ -1,4 +1,0 @@
-# Idle
-exec swayidle \
-    timeout 2700 $SLEEP_COMMAND \
-    before-sleep $LOCK_COMMAND

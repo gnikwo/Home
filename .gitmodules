@@ -1,0 +1,3 @@
+[submodule ".config/sway"]
+	path = .config/sway
+	url = git@github.com:/nab-os/home_sway

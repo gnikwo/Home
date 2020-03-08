@@ -14,9 +14,12 @@
     editor = nvim
 [diff]
 	tool = vimdiff
+	submodule = log
 [merge]
     tool = vimdiff
 [mergetool "vimdiff"]
     cmd = nvim -d $LOCAL $REMOTE -c 'wincmd w'
 [difftool]
 	prompt = false
+[status]
+	submoduleSummary = true
