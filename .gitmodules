@@ -1,3 +1,21 @@
 [submodule ".config/sway"]
 	path = .config/sway
-	url = git@github.com:/nab-os/home_sway
+	url = git@github.com:nab-os/home_sway
+[submodule ".config/zsh"]
+	path = .config/zsh
+	url = git@github.com:nab-os/home_zsh
+[submodule ".config/themes"]
+	path = .config/themes
+	url = git@github.com:nab-os/home_themes
+[submodule ".config/realmenu"]
+	path = .config/realmenu
+	url = git@github.com:nab-os/realmenu
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:nab-os/home_nvim
+[submodule ".config/termite"]
+	path = .config/termite
+	url = git@github.com:nab-os/home_termite
+[submodule ".config/mako"]
+	path = .config/mako
+	url = git@github.com:nab-os/home_mako
