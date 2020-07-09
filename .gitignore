@@ -4,4 +4,5 @@
 !.gitconfig
 !.gitmodules
 !.pam_environment
+!.zshenv
 .config/*
