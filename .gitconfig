@@ -23,3 +23,5 @@
 	prompt = false
 [status]
 	submoduleSummary = true
+[pull]
+	rebase = true
